@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.profile.SettingsNavigation.PrivacyPolicy">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarPrivacyPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:elevation="4dp"
+        app:title="Privacy Policy"
+        android:background="@color/blue"
+        app:titleTextColor="@color/white"
+        app:subtitleTextAppearance="@font/lexend_bold"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarPrivacyPolicy"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/lexend_"
+                android:gravity="start"
+                android:text="We want you to know exactly how StockWise services work and why we need your details. Reviewing our policy will help you continue using the app with peace of mind."
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/Constraint_Layout_Policy">
+
+                <TextView
+                    android:id="@+id/txtIntroduction"
+                    style="@style/txt_Privacy_Policy"
+                    android:text="Introduction to policy"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/btnIntroduction"
+                    style="@style/Plus_Icon_Policy"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/ShowIntroduction"
+            style="@style/Hidden_Linear_Policy">
+
+
+            <TextView
+                android:id="@+id/txtAboutIntroduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/lexend_"
+                android:text="This Privacy Policy outlines the policies and procedures of Stock Wise regarding the collection, use, and disclosure of personal information collected through its application, Stock Wise. This policy applies to all users of the application, including those who are simply browsing the application, those who are registered users, and those who purchase products or services through the application."
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/Constraint_Layout_Policy">
+
+                <TextView
+                    android:id="@+id/txtInformation"
+                    style="@style/txt_Privacy_Policy"
+                    android:text="What information do we \ncollect about you?"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/btnInformation"
+                    style="@style/Plus_Icon_Policy"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/ShowInformation"
+                style="@style/Hidden_Linear_Policy">
+
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/lexend_bold"
+                    android:text="The application collects the following personal information from users:"
+                    android:textColor="@color/blue"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lexend_"
+                    android:text="\u25CF Name"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/lexend_"
+                    android:text="\u25CF Phone Number"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/lexend_"
+                    android:text="\u25CF Email Address"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/lexend_"
+                    android:text="\u25CF Shop Location"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/lexend_"
+                    android:text="\u25CF Payment Information (if applicable)"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/lexend_"
+                    android:text="\u25CF Product Inventory Data"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/lexend_"
+                    android:text="\u25CF Sales Data"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/Constraint_Layout_Policy">
+
+                <TextView
+                    android:id="@+id/txtUseInformation"
+                    style="@style/txt_Privacy_Policy"
+                    android:text="How do we use your \ninformation ?"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/btnUseInformation"
+                    style="@style/Plus_Icon_Policy"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/ShowUseInformation"
+            style="@style/Hidden_Linear_Policy">
+
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/lexend_bold"
+                android:text="The application uses the personal information collected from users for the following purposes:"
+                android:textColor="@color/blue"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lexend_"
+                android:text="\u25CF To provide and improve the application and its services"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lexend_"
+                android:text="\u25CF To process orders and transactions"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lexend_"
+                android:text="\u25CF To communicate with users about their orders, transactions, and accounts"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lexend_"
+                android:text="\u25CF To send users promotional materials and offers"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/Constraint_Layout_Policy">
+
+                <TextView
+                    android:id="@+id/txtSecurity"
+                    style="@style/txt_Privacy_Policy"
+                    android:text="What do we do to keep \nyour information secure?"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/btnSecurity"
+                    style="@style/Plus_Icon_Policy"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/ShowSecurity"
+            style="@style/Hidden_Linear_Policy">
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/lexend_bold"
+                android:text="Data Security"
+                android:textColor="@color/blue"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/lexend_"
+                android:text="\u25CF We take appropriate measures to safeguard the personal information collected by the application, including the use of encryption, access controls, and regular security assessments. However, no method of transmission over the internet or electronic storage is entirely secure."
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/Constraint_Layout_Policy">
+
+                <TextView
+                    android:id="@+id/txtUpdates"
+                    style="@style/txt_Privacy_Policy"
+                    android:text="Updates to this policy"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/btnUpdatees"
+                    style="@style/Plus_Icon_Policy"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/ShowUpdates"
+                style="@style/Hidden_Linear_Policy">
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/lexend_"
+                    android:text="We may update this Privacy Policy from time to time. We will notify users of significant changes by posting the updated Privacy Policy on our website or through the application."
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

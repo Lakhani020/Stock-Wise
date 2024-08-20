@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".fragments.profile.Settings">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarSetting"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:background="@color/blue"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:subtitleTextAppearance="@font/lexend_bold"
+        app:title="Settings"
+        app:titleTextColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSetting">
+
+        <LinearLayout
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/LayoutAccount"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iconkey"
+                    style="@style/Imageview_Settings"
+                    android:background="@drawable/keyvector"
+                    android:backgroundTint="@color/TextGrey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearStyle_Settings">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    style="@style/Txt_Settings"
+                    android:text="Account"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    style="@style/TxtSub_Settings"
+                    android:text="Personal information" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LayoutAboutUs"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iconAbout"
+                    style="@style/Imageview_Settings"
+                    android:src="@drawable/aboutvector" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearStyle_Settings">
+
+                <TextView
+                    android:id="@+id/txtAboutSettings"
+                    style="@style/Txt_Settings"
+                    android:text="About"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtAboutBrief"
+                    style="@style/TxtSub_Settings"
+                    android:text="All the stuff you need to know" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LayoutPrivacyPolicy"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iconPrivacy"
+                    style="@style/Imageview_Settings"
+                    android:src="@drawable/privacyvector" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearStyle_Settings">
+
+                <TextView
+                    android:id="@+id/txtPrivacySettings"
+                    style="@style/Txt_Settings"
+                    android:text="Privacy Policy"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtPrivacyBrief"
+                    style="@style/TxtSub_Settings"
+                    android:text="Terms &amp; conditions" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LayoutReportIssue"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iconReport"
+                    style="@style/Imageview_Settings"
+                    android:padding="15dp"
+                    android:src="@drawable/reportvector" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearStyle_Settings">
+
+                <TextView
+                    android:id="@+id/txtReportSettings"
+                    style="@style/Txt_Settings"
+                    android:text="Report app issues" />
+
+                <TextView
+                    android:id="@+id/txtReportBrief"
+                    style="@style/TxtSub_Settings"
+                    android:text="Tell us your problem" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iconHelp"
+                    style="@style/Imageview_Settings"
+                    android:src="@drawable/helpvector" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LayoutHelp"
+                style="@style/LinearStyle_Settings">
+
+                <TextView
+                    android:id="@+id/txtHelpSettings"
+                    style="@style/Txt_Settings"
+                    android:text="Help"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtHelpBrief"
+                    style="@style/TxtSub_Settings"
+                    android:text="Help center, Contact us" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
